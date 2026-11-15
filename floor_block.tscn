@@ -1,0 +1,18 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://block_art.gd" id="1_wbgmg"]
+[ext_resource type="Texture2D" path="res://art/MiddleBlock.tres" id="2_348vk"]
+
+[sub_resource type="RectangleShape2D" id="shape"]
+size = Vector2(64, 64)
+
+[node name="FloorBlock" type="StaticBody2D" unique_id=1147288089]
+script = ExtResource("1_wbgmg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=925145284]
+shape = SubResource("shape")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=421100697]
+texture_filter = 1
+scale = Vector2(0.5, 0.512)
+texture = ExtResource("2_348vk")

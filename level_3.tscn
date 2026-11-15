@@ -1,0 +1,402 @@
+[gd_scene format=3 uid="uid://brcupy6hqm7p"]
+
+[ext_resource type="Script" uid="uid://bhbtfgbnydc2v" path="res://level.gd" id="1_7ds5r"]
+[ext_resource type="PackedScene" path="res://floor_block.tscn" id="2_liaj6"]
+[ext_resource type="PackedScene" path="res://player.tscn" id="3_b60u5"]
+[ext_resource type="PackedScene" path="res://spike.tscn" id="5_833wy"]
+[ext_resource type="PackedScene" path="res://coin.tscn" id="7_jvy75"]
+[ext_resource type="PackedScene" path="res://finish.tscn" id="8_g0tlw"]
+[ext_resource type="PackedScene" path="res://spike_2.tscn" id="8_keufu"]
+[ext_resource type="PackedScene" path="res://spike_3.tscn" id="9_joegk"]
+[ext_resource type="Texture2D" uid="uid://bg5sc8vj2geyh" path="res://art/SlimeBackground.png" id="10_b60u5"]
+[ext_resource type="PackedScene" path="res://spike_4.tscn" id="10_m8gss"]
+[ext_resource type="PackedScene" uid="uid://bftfxghsfv2x5" path="res://saw.tscn" id="14_wnq0t"]
+
+[node name="HavenLevel" type="Node2D" unique_id=383555354]
+script = ExtResource("1_7ds5r")
+level_number = 3
+next_level = "res://statistics.tscn"
+
+[node name="Saw" parent="." unique_id=1028832240 instance=ExtResource("14_wnq0t")]
+position = Vector2(1947.0001, 445)
+
+[node name="Saw2" parent="." unique_id=1538119262 instance=ExtResource("14_wnq0t")]
+position = Vector2(348, 253)
+
+[node name="Saw5" parent="." unique_id=56835690 instance=ExtResource("14_wnq0t")]
+position = Vector2(310.00003, 443)
+
+[node name="Saw3" parent="." unique_id=1708692891 instance=ExtResource("14_wnq0t")]
+position = Vector2(493, 248)
+
+[node name="Saw6" parent="." unique_id=1591793502 instance=ExtResource("14_wnq0t")]
+position = Vector2(493, 248)
+
+[node name="Saw7" parent="." unique_id=1755804033 instance=ExtResource("14_wnq0t")]
+position = Vector2(585.99994, 529)
+
+[node name="Saw4" parent="." unique_id=2009113035 instance=ExtResource("14_wnq0t")]
+position = Vector2(668, 259)
+
+[node name="Floor" type="Node2D" parent="." unique_id=1380796770]
+
+[node name="Block00" parent="Floor" unique_id=1533051949 instance=ExtResource("2_liaj6")]
+position = Vector2(32, 480)
+block_style = 0
+
+[node name="Block01" parent="Floor" unique_id=1163321313 instance=ExtResource("2_liaj6")]
+position = Vector2(96, 480)
+
+[node name="Block02" parent="Floor" unique_id=455271554 instance=ExtResource("2_liaj6")]
+position = Vector2(160, 480)
+
+[node name="Block03" parent="Floor" unique_id=1895925003 instance=ExtResource("2_liaj6")]
+position = Vector2(307, 357)
+
+[node name="Block10" parent="Floor" unique_id=1147288089 instance=ExtResource("2_liaj6")]
+position = Vector2(307, 421)
+
+[node name="Block04" parent="Floor" unique_id=374277237 instance=ExtResource("2_liaj6")]
+position = Vector2(307, 292)
+
+[node name="Block05" parent="Floor" unique_id=509155089 instance=ExtResource("2_liaj6")]
+position = Vector2(217, 606)
+
+[node name="Block06" parent="Floor" unique_id=1784047200 instance=ExtResource("2_liaj6")]
+position = Vector2(369, 292)
+
+[node name="Block11" parent="Floor" unique_id=549027217 instance=ExtResource("2_liaj6")]
+position = Vector2(433, 292)
+
+[node name="Block07" parent="Floor" unique_id=1949434233 instance=ExtResource("2_liaj6")]
+position = Vector2(367, 626)
+
+[node name="Block08" parent="Floor" unique_id=12208152 instance=ExtResource("2_liaj6")]
+position = Vector2(624, 469)
+
+[node name="Block09" parent="Floor" unique_id=1301619160 instance=ExtResource("2_liaj6")]
+position = Vector2(506, 566)
+block_style = 2
+
+[node name="Block12" parent="Floor" unique_id=2105959125 instance=ExtResource("2_liaj6")]
+position = Vector2(800, 480)
+block_style = 0
+
+[node name="Block15" parent="Floor" unique_id=826277137 instance=ExtResource("2_liaj6")]
+position = Vector2(992, 480)
+
+[node name="Block16" parent="Floor" unique_id=1042715219 instance=ExtResource("2_liaj6")]
+position = Vector2(1056, 480)
+
+[node name="Block17" parent="Floor" unique_id=491898978 instance=ExtResource("2_liaj6")]
+position = Vector2(1534, 654)
+
+[node name="Block18" parent="Floor" unique_id=373624372 instance=ExtResource("2_liaj6")]
+position = Vector2(1598, 654)
+
+[node name="Block19" parent="Floor" unique_id=2087993138 instance=ExtResource("2_liaj6")]
+position = Vector2(1662, 654)
+
+[node name="Block20" parent="Floor" unique_id=478952031 instance=ExtResource("2_liaj6")]
+position = Vector2(1726, 654)
+
+[node name="Block21" parent="Floor" unique_id=1096365996 instance=ExtResource("2_liaj6")]
+position = Vector2(1790, 654)
+
+[node name="Block22" parent="Floor" unique_id=1001019596 instance=ExtResource("2_liaj6")]
+position = Vector2(1440, 480)
+
+[node name="Block23" parent="Floor" unique_id=1419818486 instance=ExtResource("2_liaj6")]
+position = Vector2(1504, 480)
+
+[node name="Block24" parent="Floor" unique_id=1989109715 instance=ExtResource("2_liaj6")]
+position = Vector2(1568, 480)
+block_style = 2
+
+[node name="Block27" parent="Floor" unique_id=1240221904 instance=ExtResource("2_liaj6")]
+position = Vector2(1790, 522)
+block_style = 0
+
+[node name="Block30" parent="Floor" unique_id=1540981134 instance=ExtResource("2_liaj6")]
+position = Vector2(1952, 480)
+
+[node name="Block31" parent="Floor" unique_id=1190472723 instance=ExtResource("2_liaj6")]
+position = Vector2(2016, 480)
+
+[node name="Block32" parent="Floor" unique_id=400467836 instance=ExtResource("2_liaj6")]
+position = Vector2(2080, 480)
+
+[node name="Block33" parent="Floor" unique_id=1215997385 instance=ExtResource("2_liaj6")]
+position = Vector2(2144, 480)
+
+[node name="Block34" parent="Floor" unique_id=1408720086 instance=ExtResource("2_liaj6")]
+position = Vector2(2208, 480)
+
+[node name="Block35" parent="Floor" unique_id=55191204 instance=ExtResource("2_liaj6")]
+position = Vector2(2272, 480)
+
+[node name="Block36" parent="Floor" unique_id=1775317934 instance=ExtResource("2_liaj6")]
+position = Vector2(2336, 480)
+
+[node name="Block37" parent="Floor" unique_id=2053194102 instance=ExtResource("2_liaj6")]
+position = Vector2(2400, 480)
+
+[node name="Block38" parent="Floor" unique_id=1048287547 instance=ExtResource("2_liaj6")]
+position = Vector2(2464, 480)
+
+[node name="Block39" parent="Floor" unique_id=1852423315 instance=ExtResource("2_liaj6")]
+position = Vector2(2528, 480)
+block_style = 2
+
+[node name="Block42" parent="Floor" unique_id=375838541 instance=ExtResource("2_liaj6")]
+position = Vector2(2720, 480)
+block_style = 0
+
+[node name="Block45" parent="Floor" unique_id=1087966134 instance=ExtResource("2_liaj6")]
+position = Vector2(2912, 480)
+
+[node name="Block46" parent="Floor" unique_id=465199580 instance=ExtResource("2_liaj6")]
+position = Vector2(2976, 480)
+
+[node name="Block47" parent="Floor" unique_id=783009633 instance=ExtResource("2_liaj6")]
+position = Vector2(3040, 480)
+
+[node name="Block48" parent="Floor" unique_id=2134963114 instance=ExtResource("2_liaj6")]
+position = Vector2(3104, 480)
+
+[node name="Block49" parent="Floor" unique_id=186995223 instance=ExtResource("2_liaj6")]
+position = Vector2(3168, 480)
+
+[node name="Block50" parent="Floor" unique_id=299765578 instance=ExtResource("2_liaj6")]
+position = Vector2(3232, 480)
+
+[node name="Block51" parent="Floor" unique_id=1977759676 instance=ExtResource("2_liaj6")]
+position = Vector2(3296, 480)
+block_style = 2
+
+[node name="Block13" parent="Floor" unique_id=1222536027 instance=ExtResource("2_liaj6")]
+position = Vector2(864, 480)
+
+[node name="Block14" parent="Floor" unique_id=1940782026 instance=ExtResource("2_liaj6")]
+position = Vector2(928, 480)
+
+[node name="Block28" parent="Floor" unique_id=394520728 instance=ExtResource("2_liaj6")]
+position = Vector2(1569, 414)
+
+[node name="Block29" parent="Floor" unique_id=477548343 instance=ExtResource("2_liaj6")]
+position = Vector2(1888, 480)
+
+[node name="Block43" parent="Floor" unique_id=149384784 instance=ExtResource("2_liaj6")]
+position = Vector2(2784, 480)
+
+[node name="Block44" parent="Floor" unique_id=657566307 instance=ExtResource("2_liaj6")]
+position = Vector2(2848, 480)
+
+[node name="FloatingPlatforms" type="Node2D" parent="." unique_id=1136059663]
+
+[node name="Platform00" parent="FloatingPlatforms" unique_id=1798223975 instance=ExtResource("2_liaj6")]
+position = Vector2(497, 291)
+block_style = 0
+
+[node name="Platform01" parent="FloatingPlatforms" unique_id=331306935 instance=ExtResource("2_liaj6")]
+position = Vector2(561, 292)
+block_style = 0
+
+[node name="Platform12" parent="FloatingPlatforms" unique_id=1699710496 instance=ExtResource("2_liaj6")]
+position = Vector2(627, 292)
+block_style = 0
+
+[node name="Platform13" parent="FloatingPlatforms" unique_id=1867423355 instance=ExtResource("2_liaj6")]
+position = Vector2(694, 292)
+block_style = 0
+
+[node name="Platform02" parent="FloatingPlatforms" unique_id=547618750 instance=ExtResource("2_liaj6")]
+position = Vector2(865, 415)
+block_style = 0
+
+[node name="Platform03" parent="FloatingPlatforms" unique_id=1640160950 instance=ExtResource("2_liaj6")]
+position = Vector2(1059, 418)
+block_style = 0
+
+[node name="Platform14" parent="FloatingPlatforms" unique_id=2020943474 instance=ExtResource("2_liaj6")]
+position = Vector2(1059, 354)
+block_style = 0
+
+[node name="Platform15" parent="FloatingPlatforms" unique_id=2042673208 instance=ExtResource("2_liaj6")]
+position = Vector2(1790, 588)
+block_style = 0
+
+[node name="Platform04" parent="FloatingPlatforms" unique_id=727526844 instance=ExtResource("2_liaj6")]
+position = Vector2(1269, 762)
+block_style = 0
+
+[node name="Platform05" parent="FloatingPlatforms" unique_id=569277372 instance=ExtResource("2_liaj6")]
+position = Vector2(1470, 715)
+block_style = 0
+
+[node name="Platform06" parent="FloatingPlatforms" unique_id=2109233603 instance=ExtResource("2_liaj6")]
+position = Vector2(1568, 347)
+block_style = 0
+
+[node name="Platform16" parent="FloatingPlatforms" unique_id=311860788 instance=ExtResource("2_liaj6")]
+position = Vector2(1569, 282)
+block_style = 0
+
+[node name="Platform07" parent="FloatingPlatforms" unique_id=1211091264 instance=ExtResource("2_liaj6")]
+position = Vector2(1716, 336)
+block_style = 0
+
+[node name="Platform08" parent="FloatingPlatforms" unique_id=252356634 instance=ExtResource("2_liaj6")]
+position = Vector2(1977, 300)
+block_style = 0
+
+[node name="Platform09" parent="FloatingPlatforms" unique_id=44479128 instance=ExtResource("2_liaj6")]
+position = Vector2(2176, 288)
+block_style = 0
+
+[node name="Platform10" parent="FloatingPlatforms" unique_id=273710265 instance=ExtResource("2_liaj6")]
+position = Vector2(2394, 333)
+block_style = 0
+
+[node name="Platform11" parent="FloatingPlatforms" unique_id=1810756297 instance=ExtResource("2_liaj6")]
+position = Vector2(2560, 288)
+block_style = 0
+
+[node name="Player" parent="." unique_id=1217866139 instance=ExtResource("3_b60u5")]
+position = Vector2(128, 400)
+jump_velocity = -600.0
+
+[node name="Spikes" type="Node2D" parent="." unique_id=85332818]
+
+[node name="Spike0" parent="Spikes" unique_id=1580335807 instance=ExtResource("5_833wy")]
+position = Vector2(644, 438)
+
+[node name="Spike1" parent="Spikes" unique_id=1383003717 instance=ExtResource("8_keufu")]
+position = Vector2(1251, 730)
+
+[node name="Spike2" parent="Spikes" unique_id=1026848309 instance=ExtResource("9_joegk")]
+position = Vector2(2208, 448)
+
+[node name="Spike3" parent="Spikes" unique_id=1973616724 instance=ExtResource("10_m8gss")]
+position = Vector2(3104, 448)
+
+[node name="Coins" type="Node2D" parent="." unique_id=1680874200]
+
+[node name="Coin0" parent="Coins" unique_id=1007472851 instance=ExtResource("7_jvy75")]
+position = Vector2(256, 390)
+
+[node name="Coin1" parent="Coins" unique_id=1226501834 instance=ExtResource("7_jvy75")]
+position = Vector2(443, 433)
+
+[node name="Coin10" parent="Coins" unique_id=1347785120 instance=ExtResource("7_jvy75")]
+position = Vector2(366, 559)
+
+[node name="Coin11" parent="Coins" unique_id=1677704244 instance=ExtResource("7_jvy75")]
+position = Vector2(720, 372)
+
+[node name="Coin2" parent="Coins" unique_id=1806463885 instance=ExtResource("7_jvy75")]
+position = Vector2(832, 390)
+
+[node name="Coin3" parent="Coins" unique_id=1248811920 instance=ExtResource("7_jvy75")]
+position = Vector2(1120, 235)
+
+[node name="Coin4" parent="Coins" unique_id=1347460397 instance=ExtResource("7_jvy75")]
+position = Vector2(1408, 390)
+
+[node name="Coin5" parent="Coins" unique_id=550305801 instance=ExtResource("7_jvy75")]
+position = Vector2(1717, 258)
+
+[node name="Coin12" parent="Coins" unique_id=722567578 instance=ExtResource("7_jvy75")]
+position = Vector2(2292, 421)
+
+[node name="Coin6" parent="Coins" unique_id=270137605 instance=ExtResource("7_jvy75")]
+position = Vector2(2115, 371)
+
+[node name="Coin7" parent="Coins" unique_id=9187774 instance=ExtResource("7_jvy75")]
+position = Vector2(2272, 235)
+
+[node name="Coin8" parent="Coins" unique_id=156081794 instance=ExtResource("7_jvy75")]
+position = Vector2(2560, 390)
+
+[node name="Coin9" parent="Coins" unique_id=1714394188 instance=ExtResource("7_jvy75")]
+position = Vector2(2848, 235)
+
+[node name="FinishMarker" parent="." unique_id=1354349197 instance=ExtResource("8_g0tlw")]
+position = Vector2(2937, 449)
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1404192503]
+
+[node name="UpgradesMargin" type="MarginContainer" parent="HUD" unique_id=512104514]
+anchors_preset = -1
+anchor_right = 0.52
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+mouse_filter = 2
+
+[node name="Upgrades" type="Label" parent="HUD/UpgradesMargin" unique_id=2122019934]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.81960785, 0.4, 1)
+theme_override_font_sizes/font_size = 16
+text = "Upgrades: None yet"
+autowrap_mode = 2
+
+[node name="Instructions" type="MarginContainer" parent="HUD" unique_id=261662998]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = -45.0
+offset_right = -20.0
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+
+[node name="LevelLabel" type="Label" parent="HUD/Instructions" unique_id=675002196]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "LEVEL 3"
+horizontal_alignment = 1
+
+[node name="TrackerMargin" type="HBoxContainer" parent="HUD" unique_id=215152349]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -430.0
+offset_top = 20.0
+offset_right = -20.0
+mouse_filter = 2
+theme_override_constants/separation = 16
+
+[node name="Timer" type="Label" parent="HUD/TrackerMargin" unique_id=1789642983]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.94509804, 0.8117647, 1)
+theme_override_font_sizes/font_size = 16
+text = "Time: 00:00"
+
+[node name="Tracker" type="Label" parent="HUD/TrackerMargin" unique_id=329953145]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.94509804, 0.8117647, 1)
+theme_override_font_sizes/font_size = 16
+text = "Deaths: 0   Blobs: 0"
+
+[node name="SlimeBackground" type="Parallax2D" parent="." unique_id=1767146872]
+z_index = -100
+scroll_scale = Vector2(0.25, 0.15)
+repeat_size = Vector2(1104, 1128)
+repeat_times = 3
+
+[node name="Artwork" type="Sprite2D" parent="SlimeBackground" unique_id=1069506067]
+modulate = Color(0.6666667, 0.72156864, 0.6666667, 1)
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("10_b60u5")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="Saws" type="Node2D" parent="." unique_id=2075457453]
+
+[connection signal="stats_changed" from="Player" to="." method="_on_stats_changed"]
+[connection signal="won" from="Player" to="." method="_on_player_won"]

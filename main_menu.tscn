@@ -1,0 +1,42 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_06t4h"]
+
+[node name="MainMenu" type="Control" unique_id=742477996]
+layout_mode = 3
+anchors_preset = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_06t4h")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1112749709]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.08235294, 0.14509805, 0.13333334, 1)
+
+[node name="Center" type="CenterContainer" parent="." unique_id=1825531082]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Rows" type="VBoxContainer" parent="Center" unique_id=622204451]
+custom_minimum_size = Vector2(380, 0)
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="Title" type="Label" parent="Center/Rows" unique_id=1583502179]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7058824, 0.9372549, 0.53333336, 1)
+theme_override_font_sizes/font_size = 48
+text = "Slime Run"
+horizontal_alignment = 1
+
+[node name="Play" type="Button" parent="Center/Rows" unique_id=1542770530]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Play"
+
+[connection signal="pressed" from="Center/Rows/Play" to="." method="_on_play_pressed"]

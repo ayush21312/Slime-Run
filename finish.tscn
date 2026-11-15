@@ -1,0 +1,46 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://level_object.gd" id="1_yp4eo"]
+[ext_resource type="Texture2D" path="res://art/SlimeFlag2.tres" id="2_xfp72"]
+[ext_resource type="Texture2D" path="res://art/SlimeFlag3.tres" id="3_ggktp"]
+[ext_resource type="Script" path="res://flag_animation.gd" id="4_hd5p8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bt3yw"]
+size = Vector2(38, 80)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7vthi"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"default",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xfp72")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ggktp")
+}],
+"loop": 1,
+"name": &"wave",
+"speed": 6.0
+}]
+
+[node name="Finish" type="Area2D" unique_id=1354349197]
+collision_layer = 0
+script = ExtResource("1_yp4eo")
+object_type = "Finish"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=819499157]
+position = Vector2(0, -40)
+shape = SubResource("RectangleShape2D_bt3yw")
+
+[node name="Flag" type="AnimatedSprite2D" parent="." unique_id=202454360]
+texture_filter = 1
+position = Vector2(-4, -90)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_7vthi")
+animation = &"wave"
+centered = false
+script = ExtResource("4_hd5p8")

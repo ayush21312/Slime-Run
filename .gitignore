@@ -1,0 +1,7 @@
+.godot/
+/android/
+/exports/
+/builds/
+*.log
+.DS_Store
+Thumbs.db
